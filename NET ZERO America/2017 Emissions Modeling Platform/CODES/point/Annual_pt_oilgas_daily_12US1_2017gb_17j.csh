@@ -91,7 +91,7 @@ setenv REPCONFIG_INV "${GE_DAT}/smkreport/repconfig/repconfig_point_inv_2016beta
 # Parameters for all sectors
 setenv FILL_ANNUAL "N"
 setenv FULLSCC_ONLY "Y"
-setenv INLINE_MODE "only"
+setenv INLINE_MODE "off"
 setenv IOAPI_ISPH "20"
 setenv L_TYPE "mwdss"
 setenv M_TYPE "mwdss"
@@ -116,10 +116,11 @@ setenv SMK_DEFAULT_SRGID "100"
 setenv SMK_MAXERROR "10000"
 setenv SMK_MAXWARNING "10"
 setenv SMK_PING_METHOD "0"
-setenv SMK_SPECELEV_YN "Y"
+setenv SMK_SPECELEV_YN "N"
 setenv SPC "$EMF_SPC"
 setenv SPINUP_MONTH_END "Y"
 setenv WEST_HSPHERE "Y"
+setenv SMK_EMLAYS "29"
 
 # Sector-specific parameters
 setenv MRG_BYDAY "P"
