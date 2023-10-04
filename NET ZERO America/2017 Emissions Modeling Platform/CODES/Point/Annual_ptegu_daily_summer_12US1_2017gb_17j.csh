@@ -28,7 +28,7 @@ source ../directory_definitions.csh
 #    When N (old behavior), Q1 will include 10 day spinup and end on 3/21; Q2 will
 #    cover 3/22 through 6/20. When Y, Q1 will include 10 day spinup and end on 3/31
 #    (including all of March), remaining quarters will function as if spinup = 0.
-setenv RUN_MONTHS "5 6 7 8 9"
+setenv RUN_MONTHS "7"
 setenv SPINUP_DURATION "0"
 setenv SPINUP_MONTH_END "Y"
 
@@ -99,7 +99,7 @@ setenv REPCONFIG_INV3 "${GE_DAT}/smkreport/repconfig/repconfig_point_inv_vocprof
 # Parameters for all sectors
 setenv FILL_ANNUAL "N"
 #setenv FULLSCC_ONLY "Y"
-setenv INLINE_MODE "only"
+setenv INLINE_MODE "off"
 setenv IOAPI_ISPH "20"
 #setenv L_TYPE "mwdss"
 #setenv M_TYPE "mwdss"
@@ -124,10 +124,12 @@ setenv SMK_DEFAULT_SRGID "100"
 setenv SMK_MAXERROR "10000"
 setenv SMK_MAXWARNING "10"
 setenv SMK_PING_METHOD "0"
-setenv SMK_SPECELEV_YN "Y"
+setenv SMK_SPECELEV_YN "N"
 setenv SPC "$EMF_SPC"
 setenv SPINUP_MONTH_END "Y"
 setenv WEST_HSPHERE "Y"
+setenv SMK_EMLAYS "29"
+
 
 # Sector-specific parameters
 setenv WRITE_ANN_ZERO "Y"
